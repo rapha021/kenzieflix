@@ -46,10 +46,11 @@ li {
 
 .users ul li img {
     border-radius: 7px;
+    border: 1px solid transparent;
 }
 
 .users ul img:hover {
-    border: 1px solid #FFFFFF;
+    border-color: #FFFFFF;
 }
 
 .users ul li p {
