@@ -25,6 +25,12 @@ li {
     margin: 73px 0;
 }
 
+section div.users-container {
+    display: flex;
+    width: 700px;
+    justify-content: center;
+}
+
 .users {
     display: flex;
     justify-content: center;
