@@ -90,12 +90,18 @@ section div.users-container {
     border-radius: 7px;
     width: 100%;
     display: block;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
     /* Fix para o tamanho da figure nao ficar um pouco maior */
 }
 
 .users ul img:hover {
     border-color: #FFFFFF;
     transform: scale(1.2);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .users ul li p {
