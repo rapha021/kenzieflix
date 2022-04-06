@@ -1,16 +1,41 @@
-body {
+html,
+body,
+figure,
+div,
+input,
+textarea,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
     margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+body {
     background-color: #121214;
 }
 
-ul,
-li {
-    list-style: none;
+figcaption {
+    display: none;
+    /*Esconde a legenda da imagem*/
 }
 
 .container {
     display: flex;
     justify-content: center;
+}
+
+figure.container {
+    margin-top: 25px;
 }
 
 .main-title {
@@ -19,6 +44,7 @@ li {
     font-weight: 600;
     font-size: 32px;
     line-height: 42px;
+    text-align: center;
 }
 
 .main-title h1 {
@@ -27,7 +53,7 @@ li {
 
 section div.users-container {
     display: flex;
-    width: 700px;
+    width: 900px;
     justify-content: center;
 }
 
@@ -38,6 +64,8 @@ section div.users-container {
 
 .users ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 61px;
 }
 
@@ -50,13 +78,23 @@ section div.users-container {
     text-decoration: none;
 }
 
-.users ul li img {
+.users ul li figure {
+    overflow: hidden;
     border-radius: 7px;
     border: 1px solid transparent;
+    width: 100%;
+}
+
+.users ul li img {
+    border-radius: 7px;
+    width: 100%;
+    display: block;
+    /* Fix para o tamanho da figure nao ficar um pouco maior */
 }
 
 .users ul img:hover {
     border-color: #FFFFFF;
+    transform: scale(1.2);
 }
 
 .users ul li p {
