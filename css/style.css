@@ -93,7 +93,7 @@ section div.users-container {
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
-    /* Fix para o tamanho da figure nao ficar um pouco maior */
+    /* Fix para o tamanho  da figure nao ficar um pouco maior */
 }
 
 .users ul img:hover {
